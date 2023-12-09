@@ -16,8 +16,10 @@ app.get("/", (req,res)=>{
 });
 
 app.get("/roldice", (req,res)=>{
-    let rolDice=Math.floor(Math.random()*6)+1;
-    res.render("roldice.ejs", {num:rolDice});
+    let diceVal=Math.floor(Math.random()*6)+1;
+    // res.render("roldice.ejs", {num:rolDice});
+    res.render("roldice.ejs", {diceVal});
+
 });
 
 
