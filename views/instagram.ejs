@@ -9,6 +9,10 @@
     <h1>this page is about @<%= username %></h1>
     <button>Follow</button>
     <button>Message</button>
+    <h2>Follwers of <%= username %></h2>
+    <% for(let name of followers){%>
+        <li><%= name %></li>
+    <% } %>
 
     
 </body>

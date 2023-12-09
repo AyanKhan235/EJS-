@@ -23,8 +23,9 @@ app.get("/roldice", (req,res)=>{
 });
 
 app.get("/ig/:username", (req,res)=>{
+    const followers =["Amaan","javed","sahil","ali"];
     let {username}=req.params;
-    res.render("instagram",{username});
+    res.render("instagram",{username,followers});
 
 });
 
