@@ -9,15 +9,15 @@ app.set("view engine", "ejs");
 app.set("views", path.join(__dirname,"/views"));
 
 
-app.get("/hello", (req,res)=>{
-    console.log("HELLO");
-});
 
 
 app.get("/", (req,res)=>{
     res.render("home.ejs");
 });
 
+app.get("/roldice", (req,res)=>{
+    res.render("roldice.ejs");
+});
 
 
 app.listen(port,()=>{
