@@ -22,6 +22,12 @@ app.get("/roldice", (req,res)=>{
 
 });
 
+app.get("/ig/:username", (req,res)=>{
+    let {username}=req.params;
+    res.render("instagram",{username});
+
+});
+
 
 app.listen(port,()=>{
     console.log(`the server in listening on this port ${port}`);
