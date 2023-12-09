@@ -7,9 +7,9 @@
 </head>
 <body>
     <h1>ROl dice generate random num</h1>
-
-    <h3><%=
-        Math.floor(Math.random()*6)+1; 
-        %></h3>
+    <h3><%= diceVal  %></h3>
+    <% if(diceVal==6){%>
+        <h2>Nice! and RolDice again</h2>
+    <% } %>
 </body>
 </html>
