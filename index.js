@@ -16,7 +16,8 @@ app.get("/", (req,res)=>{
 });
 
 app.get("/roldice", (req,res)=>{
-    res.render("roldice.ejs");
+    let rolDice=Math.floor(Math.random()*6)+1;
+    res.render("roldice.ejs", {num:rolDice});
 });
 
 
